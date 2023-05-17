@@ -36,7 +36,7 @@ export default function Home({allPostsData}) {
         <p> {console.log(allPostsData)} </p>
       </section>
       <section className={`${styles.headingMd} ${styles.padding1px}`}>
-        <h2 className={styles.headingLg}> Blog </h2>
+        <h2 className={styles.headingLg}> Blog with next.js </h2>
         <ul className={styles.list}>
           {allPostsData.map(({id, date, title}) => (
             <li className={styles.listItem} key={id}>
