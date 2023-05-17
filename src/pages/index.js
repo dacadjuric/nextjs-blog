@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import HomePage from './HomePage';
-import FirstPost from './posts/first-post';
 import Link from 'next/link';
 import Layout, { siteTitle } from '@/components/layout';
 import { getSortedPostsData } from '../../lib/posts';
@@ -24,7 +23,6 @@ export default function Home({allPostsData}) {
   return (
     <Layout home>
       <h1>
-        Read <Link href="/posts/first-post"> this page. </Link>
       </h1>
       <HomePage />
       <Head>
